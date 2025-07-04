@@ -58,7 +58,7 @@ if st.button("Predict Heart Disease Risk"):
     pred = model.predict(df_input)[0]
     conf = model.predict_proba(df_input)[0][1]
 
-    st.subheader("🧾 Result:")
+    st.subheader("Result:")
     if pred == 1:
         st.error(f"Prediction: **Heart Disease** \n")
         st.error(f"Confidence: **{conf:.2%}**")
