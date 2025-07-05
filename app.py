@@ -60,8 +60,8 @@ if st.button("Predict Heart Disease Risk"):
 
     st.subheader("Result:")
     if pred == 1:
-        st.error(f"Prediction: **Heart Disease** \n")
+        st.error(f"Prediction: **Risk at Heart Disease** \n")
         st.error(f"Confidence: **{conf:.2%}**")
     else:
-        st.success(f"Prediction: **No Heart Disease**  \n")
+        st.success(f"Prediction: **No Risk at Heart Disease**  \n")
         st.success(f"Confidence: **{(1 - conf):.2%}**")
